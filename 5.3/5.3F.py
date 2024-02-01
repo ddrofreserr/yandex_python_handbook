@@ -16,6 +16,6 @@ def find_roots(a, b, c):
     D = b ** 2 - 4 * a * c
     if D < 0 or a == b == 0:
         raise NoSolutionsError('Вызвано исключение NoSolutionsError')
-    root1 = (- b - D ** 0.5) / 2 * a
-    root2 = (- b + D ** 0.5) / 2 * a
+    root1 = (- b - D ** 0.5) / (2 * a)
+    root2 = (- b + D ** 0.5) / (2 * a)
     return min(root1, root2), max(root1, root2)
